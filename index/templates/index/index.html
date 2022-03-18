@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	{% load static %}
+	<meta charset="UTF-8">
+	<title>Inicio</title>
+	<style>
+		body{background-color: #4642B8;font-family: Arial;}
+		
+		#menu{
+			background-color: #000;
+
+		}
+
+		#menu ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		#menu ul li{
+			display: inline-block;
+		}
+
+		#menu ul li a{
+			color: white;
+			display: block;
+			padding: 20px 20px;
+			text-decoration: none;
+		}
+
+		#menu ul li a:hover{
+			background-color: #42B881;
+		}
+
+		.item-r{
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<div id="menu">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Acerca</a></li>
+			<li><a href="#">Servicios</a></li>
+			<li class="item-r"><a href="#">Contacto</a></li>
+		</ul>
+	</div>
+	<div>
+		<img src= {% static 'assets/logo.png' %} alt="no importo la imagen">
+	</div>
+</body>
+</html>
